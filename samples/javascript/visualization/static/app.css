@@ -1,0 +1,195 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+}
+
+::selection {
+    background-color: #35C1E4;
+    color: white;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #1BA8CB;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #35C1E4;
+}
+
+html, body {
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    color: #02303A;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.4em;
+}
+
+.section {
+    padding-top: 88px;
+    text-align: center;
+    flex: 1;
+}
+
+.section--error__image-container .section--image-container {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.section--error__message-container {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.section--error__message {
+    margin-top: 0.67em;
+    margin-bottom: 0;
+    font-size: 46px;
+    color: #FF4800;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.section--error__message-details {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: #FF4800;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.section--error__help-link {
+    font-size: 16px;
+    margin-top: 30px;
+    color: #02303A;
+}
+
+.ge-main-menu {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 11;
+    background-color: #f7f7f8;
+    color: #999;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
+    height: 50px;
+    min-height: 50px;
+    padding-right: 24px;
+}
+
+.ge-main-menu__logo {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    min-width: 205px;
+    padding-left: 16px;
+}
+
+.ge-main-menu__title {
+    font-size: 1.6em;
+    line-height: 2.2em;
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.ge-main-menu__logo-image {
+    height: 24px;
+}
+
+.ge-main-menu__logo-text {
+    margin-left: 4px;
+    color: #02303A;
+    font-size: 20px;
+    white-space: nowrap;
+    line-height: 42px;
+    align-self: flex-end;
+    letter-spacing: -0.66px;
+}
+
+.ge-base-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.ge-page {
+    display: flex;
+    flex-grow: 1;
+    margin: 1em;
+    gap: 2em;
+}
+
+#tasks {
+    width: 580px;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.task {
+    position: absolute;
+    height: 17px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    max-width: 570px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.task:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+section {
+    border-right: 3px solid lightgrey;
+    padding-right: 2em;
+}
+
+#viewDiv {
+    flex-grow: 1;
+}
+
+#bigtext {
+    font-size: 150px;
+    text-align: center;
+}
+
+.tick {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+circle {
+    fill: indianred;
+}
+circle.success {
+    fill: darkseagreen;
+}
+circle:hover {
+    cursor: pointer;
+    fill: #8a2be2;
+}

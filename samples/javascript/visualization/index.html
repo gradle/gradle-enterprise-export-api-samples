@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Build visualization</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="/tasks.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="ge-base-layout">
+    <div class="ge-main-menu">
+        <div class="ge-main-menu__logo">
+            <a href="https://gradle.com">
+                <img
+                        class="ge-main-menu__logo-image"
+                        src='/gradle-enterprise-logo.svg'
+                        alt="logo"
+                />
+            </a>
+        </div>
+        <div class="ge-main-menu__title">
+            Export API data for <span class="name"></span>
+        </div>
+    </div>
+    <div class="ge-page">
+        <section>
+            <h2>Slowest "non-cacheable" tasks</h2>
+            <p>Exponential moving average for the past 10 executions. Click for last task execution.</p>
+            <div id="tasks">
+            </div>
+
+        </section>
+        <section>
+            <div id="viewDiv">
+                <h2>Build runtime</h2>
+                <p>Shows builds execution time (in seconds) at the time they completed. Red for failure. Click for scan.</p>
+                <svg></svg>
+            </div>
+        </section>
+        <section>
+            <div id="pie">
+                <h2>Percentage of successful builds</h2>
+                <p>Shows an idea of the split between failed or successful builds since the page was loaded.</p>
+                <div id="bigtext"></div>
+            </div>
+        </section>
+        <script src="/buildChart.js"></script>
+    </div>
+</div>
+</body>

@@ -1,0 +1,17 @@
+{
+  "name": "export-api-javascript-visualisation-example",
+  "description": "Export API visualisation example",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gradle/gradle-enterprise-export-api-samples.git",
+    "directoy": "samples/javascript/visualization"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
